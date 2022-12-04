@@ -6,11 +6,12 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
 import Typography from "@mui/material/Typography";
+import {FaUserAlt} from "react-icons/fa";
+import {MdOutlineWork} from "react-icons/md";
+
+import "./../header.css";
+
 
 const TimelineConstructor = () => {
   const [isactive, setisactive] = React.useState(true);
@@ -24,10 +25,11 @@ const TimelineConstructor = () => {
     setisactive(!isactive);
     setisactive1(!isactive1);
   };
+
   return (
-    <div className="Container">
-      <div className="act">
-        <div className="act_title">
+    <div className="Container ">
+      <div className="act ">
+        <div className="act_title" id="activite">
           <h1 className="title">Activites</h1>
         </div>
         <div className="sub_title">
@@ -36,90 +38,79 @@ const TimelineConstructor = () => {
 
         <div className="switch">
           <span className="subH" onClick={handleclick}>
-            Personal |
+           <FaUserAlt/> Personal |
           </span>{" "}
           <span className="subH" onClick={handleclick1}>
-            Work
+           <MdOutlineWork/> Work
           </span>
         </div>
 
         <div className={isactive ? "timeline1" : "timeline1off"}>
           <Timeline position="alternate">
+            
+            <TimelineItem>
+              
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+                // color="text.secondary"
+              >
+                 2019-2023
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+          <TimelineDot color="secondary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                B.tech (INFORMATION TECHNOLOGY)
+                </Typography>
+                <Typography>KRISHNA ENGINEERING COLLEGE</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                variant="body2"
+                // color="text.secondary"
+              >
+                2018-2019
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+          <TimelineDot color="secondary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                INTERMEDIATE
+                </Typography>
+                <Typography>GEETA BAL BHARTI SR SEC
+SCHOOL(CBSE)</Typography>
+              </TimelineContent>
+            </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
-                color="text.secondary"
+                // color="text.secondary"
               >
-                rtdtgfhfch
+                 2016-2017
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot>
-                  <FastfoodIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
+          <TimelineDot color="secondary" />
+          <TimelineConnector />
+        </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                  Eaten
+                HIGH SCHOOL
                 </Typography>
-                <Typography>Because you need strength</Typography>
+                <Typography>GEETA BAL BHARTI SR SEC
+SCHOOL(CBSE)</Typography>
               </TimelineContent>
             </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: "auto 0" }}
-                variant="body2"
-                color="text.secondary"
-              >
-                10:00 am
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary">
-                  <LaptopMacIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
-                  Code
-                </Typography>
-                <Typography>Because it&apos;s awesome!</Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary" variant="outlined">
-                  <HotelIcon />
-                </TimelineDot>
-                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
-                  Sleep
-                </Typography>
-                <Typography>Because you need rest</Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                <TimelineDot color="secondary">
-                  <RepeatIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
-                  Repeat
-                </Typography>
-                <Typography>Because this is the life you love!</Typography>
-              </TimelineContent>
-            </TimelineItem>
+         
           </Timeline>
         </div>
 
@@ -130,78 +121,49 @@ const TimelineConstructor = () => {
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
-                color="text.secondary"
+                // color="text.secondary"
               >
-                9:30 am
+                Gurugram City in Haryana
+              <p>08/2022 - 2023</p>
+              
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot>
-                  <FastfoodIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
+          <TimelineDot color="secondary" />
+          <TimelineConnector />
+        </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                  Eaten
+                Software Developer Engineer 
                 </Typography>
-                <Typography>Because you need strength</Typography>
+                <Typography>CrossTower India Pvt. Ltd.</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
                 sx={{ m: "auto 0" }}
                 variant="body2"
-                color="text.secondary"
+                // color="text.secondary"
               >
-                10:00 am
+                Online
+              <p>06/2021 - 07/2021 </p>
               </TimelineOppositeContent>
+              
               <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary">
-                  <LaptopMacIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
+          <TimelineDot color="secondary" />
+          <TimelineConnector />
+        </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                  Code
+                Tathastu Dsa Scholar Intern
                 </Typography>
-                <Typography>Because it&apos;s awesome!</Typography>
+                <Typography>TwO WaiTs</Typography>
               </TimelineContent>
             </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary" variant="outlined">
-                  <HotelIcon />
-                </TimelineDot>
-                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
-                  Sleep
-                </Typography>
-                <Typography>Because you need rest</Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                <TimelineDot color="secondary">
-                  <RepeatIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
-                  Repeat
-                </Typography>
-                <Typography>Because this is the life you love!</Typography>
-              </TimelineContent>
-            </TimelineItem>
+            
+            
           </Timeline>
         </div>
+      
       </div>
     </div>
   );
