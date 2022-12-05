@@ -4,11 +4,13 @@ import {
   DiHtml5,
   DiCss3,
   DiJsBadge,
-  DiJqueryLogo,
   DiBootstrap,
   DiGit,
   DiReact,
 } from "react-icons/di";
+import {
+  VscJson
+} from "react-icons/vsc"
 import "../header.css";
 
 const Skills = () => {
@@ -38,8 +40,8 @@ const Skills = () => {
         
 
         <div className="card c5">
-          <DiJqueryLogo size={70} />
-          <span>Jquery</span>
+          <VscJson size={70} />
+          <span>JSON</span>
         </div>
         <div className="card c6">
           <DiBootstrap size={70} />
