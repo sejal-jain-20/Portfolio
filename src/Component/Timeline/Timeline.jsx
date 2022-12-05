@@ -16,14 +16,15 @@ import "./../header.css";
 const TimelineConstructor = () => {
   const [isactive, setisactive] = React.useState(true);
   const [isactive1, setisactive1] = React.useState(false);
+ 
   const handleclick = () => {
-    setisactive(!isactive);
-    setisactive1(!isactive1);
+    setisactive(true);
+    setisactive1(false);
   };
 
   const handleclick1 = () => {
-    setisactive(!isactive);
-    setisactive1(!isactive1);
+    setisactive1(true);
+    setisactive(false);
   };
 
   return (
