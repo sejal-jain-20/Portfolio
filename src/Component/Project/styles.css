@@ -59,6 +59,13 @@ body {
         width: 100%;
         height: auto;
       }
+      .project_Content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+      }
+    
 
   }
   
@@ -73,6 +80,10 @@ body {
     align-items: center;
     flex-direction: column;
   }
+  .project_data{
+    margin: 1.5rem 0;
+  }
+  
   
 }
 
@@ -82,5 +93,9 @@ body {
 }
 .portfolio_img:hover{
   box-shadow: 10px 10px 10px grey;
-  width: 60%;
+
+}
+.project_data{
+  margin:0 1rem;
+  padding: 0 1rem;
 }

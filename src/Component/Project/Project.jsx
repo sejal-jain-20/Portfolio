@@ -41,10 +41,9 @@ const Project = () => {
        <SwiperSlide><div className="project_Content grid ">
             <img src={q1} alt="" className="portfolio_img " />
             <div className="project_data">
-              <h3 className="porject_title">Modern Website</h3>
+              <h3 className="porject_title">Quiz Game</h3>
               <p className="project_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi illo reiciendis inventore!
+              Quiz Game using React and Json API.
               </p>
               <button><a href="https://quiz-nu-lilac.vercel.app/" className="button button--flex button--small project__button">Demo<AiOutlineArrowRight/></a></button>
             </div>
@@ -55,10 +54,12 @@ const Project = () => {
         <SwiperSlide><div className="project_Content grid ">
             <img src={b1} alt="" className="portfolio_img" />
             <div className="project_data">
-              <h3 className="porject_title">Modern Website</h3>
+              <h3 className="porject_title">Developer-hub</h3>
               <p className="project_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi illo reiciendis inventore!
+              Technology used : MERN stack.
+              <br/>
+               Working on the website to create a platform that
+               helps in learning the new tech like Blockchain, Metaverse, AR/VR and AI/ML. 
               </p>
               <button><a href="https://developerhub-zeta.vercel.app/" className="button button--flex button--small project__button">Demo<AiOutlineArrowRight/></a></button>
             </div>
@@ -70,10 +71,9 @@ const Project = () => {
           <div className="project_Content grid ">
             <img src={p2} alt="" className="portfolio_img" />
             <div className="project_data">
-              <h3 className="porject_title">Modern Website</h3>
+              <h3 className="porject_title">Header Design</h3>
               <p className="project_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi illo reiciendis inventore!
+                Simple and ease design of header.
               </p>
               <button><a href="https://sejal-jain-20.github.io/headerDesign/" className="button button--flex button--small project__button">Demo<AiOutlineArrowRight/></a></button>
             </div>
@@ -84,11 +84,9 @@ const Project = () => {
           <div className="project_Content grid ">
             <img src={p1} alt="" className="portfolio_img" />
             <div className="project_data">
-              <h3 className="porject_title">Modern Website</h3>
+              <h3 className="porject_title">Responsive Website</h3>
               <p className="project_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi illo reiciendis inventore!
-              </p>
+               A Simple Responsive website using CSS only with no framework.</p>
               <button><a href="https://sejal-jain-20.github.io/projectgithub.io/" className="button button--flex button--small project__button">Demo<AiOutlineArrowRight/></a></button>
             </div>
           </div>
@@ -98,10 +96,9 @@ const Project = () => {
           <div className="project_Content grid ">
             <img src={l1} alt="" className="portfolio_img" />
             <div className="project_data">
-              <h3 className="porject_title">Modern Website</h3>
+              <h3 className="porject_title">Assignment Website</h3>
               <p className="project_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi illo reiciendis inventore!
+                Basic laptop landing page , created by online learning based internship.
               </p>
               <button><a href="https://sejal-jain-20.github.io/twowaits_Intership/" className="button button--flex button--small project__button">Demo<AiOutlineArrowRight/></a></button>
             </div>
@@ -112,10 +109,9 @@ const Project = () => {
           <div className="project_Content grid ">
             <img src={g4} alt="" className="portfolio_img" />
             <div className="project_data">
-              <h3 className="porject_title">Modern Website</h3>
+              <h3 className="porject_title">Pig Game</h3>
               <p className="project_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi illo reiciendis inventore!
+                Pig-game made by using html , css, js .
               </p>
               <button><a href="https://sejal-jain-20.github.io/piggame/" className="button button--flex button--small project__button">Demo<AiOutlineArrowRight/></a></button>
             </div>
