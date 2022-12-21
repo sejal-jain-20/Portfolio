@@ -7,16 +7,14 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
-import {FaUserAlt} from "react-icons/fa";
-import {MdOutlineWork} from "react-icons/md";
-
-import "./../header.css";
-
+import { FaUserAlt } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
+import Section from "../Section/Section";
 
 const TimelineConstructor = () => {
   const [isactive, setisactive] = React.useState(true);
   const [isactive1, setisactive1] = React.useState(false);
- 
+
   const handleclick = () => {
     setisactive(true);
     setisactive1(false);
@@ -29,43 +27,44 @@ const TimelineConstructor = () => {
 
   return (
     <div className="Container ">
-      <div className="act ">
-        <div className="act_title" id="activite">
-          <h1 className="title">Activites</h1>
-        </div>
+      <div className="act " id="activite">
+        <Section title="Timeline" subtitle="My Journey" />
         <div className="sub_title">
           <h2 className="Qua">Qualification</h2>
         </div>
 
         <div className="switch">
-          <span className="subH" onClick={handleclick}>
-           <FaUserAlt/> Personal |
-          </span>{" "}
-          <span className="subH" onClick={handleclick1}>
-           <MdOutlineWork/> Work
-          </span>
+          <div className={isactive ? "active" : "subH"}>
+            <span onClick={handleclick}>
+              <FaUserAlt /> Personal
+            </span>
+          </div>
+          <p> | </p>
+          <div className={isactive1 ? "active" : "subH"}>
+            <span onClick={handleclick1}>
+              <MdOutlineWork /> Work
+            </span>
+          </div>
         </div>
 
         <div className={isactive ? "timeline1" : "timeline1off"}>
           <Timeline position="alternate">
-            
             <TimelineItem>
-              
               <TimelineOppositeContent
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
                 // color="text.secondary"
               >
-                 2019-2023
+                2019-2023
               </TimelineOppositeContent>
               <TimelineSeparator>
-          <TimelineDot color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
+                <TimelineDot color="secondary" />
+                <TimelineConnector />
+              </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                B.tech (INFORMATION TECHNOLOGY)
+                  B.tech (INFORMATION TECHNOLOGY)
                 </Typography>
                 <Typography>KRISHNA ENGINEERING COLLEGE</Typography>
               </TimelineContent>
@@ -79,15 +78,14 @@ const TimelineConstructor = () => {
                 2018-2019
               </TimelineOppositeContent>
               <TimelineSeparator>
-          <TimelineDot color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
+                <TimelineDot color="secondary" />
+                <TimelineConnector />
+              </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                INTERMEDIATE
+                  INTERMEDIATE
                 </Typography>
-                <Typography>GEETA BAL BHARTI SR SEC
-SCHOOL(CBSE)</Typography>
+                <Typography>GEETA BAL BHARTI SR SEC SCHOOL(CBSE)</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -97,21 +95,19 @@ SCHOOL(CBSE)</Typography>
                 variant="body2"
                 // color="text.secondary"
               >
-                 2016-2017
+                2016-2017
               </TimelineOppositeContent>
               <TimelineSeparator>
-          <TimelineDot color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
+                <TimelineDot color="secondary" />
+                <TimelineConnector />
+              </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                HIGH SCHOOL
+                  HIGH SCHOOL
                 </Typography>
-                <Typography>GEETA BAL BHARTI SR SEC
-SCHOOL(CBSE)</Typography>
+                <Typography>GEETA BAL BHARTI SR SEC SCHOOL(CBSE)</Typography>
               </TimelineContent>
             </TimelineItem>
-         
           </Timeline>
         </div>
 
@@ -125,16 +121,15 @@ SCHOOL(CBSE)</Typography>
                 // color="text.secondary"
               >
                 Gurugram City in Haryana
-              <p>08/2022 - 2023</p>
-              
+                <p>08/2022 - 2023</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-          <TimelineDot color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
+                <TimelineDot color="secondary" />
+                <TimelineConnector />
+              </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                Software Developer Engineer 
+                  Software Developer Engineer
                 </Typography>
                 <Typography>CrossTower India Pvt. Ltd.</Typography>
               </TimelineContent>
@@ -146,25 +141,22 @@ SCHOOL(CBSE)</Typography>
                 // color="text.secondary"
               >
                 Online
-              <p>06/2021 - 07/2021 </p>
+                <p>06/2021 - 07/2021 </p>
               </TimelineOppositeContent>
-              
+
               <TimelineSeparator>
-          <TimelineDot color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
+                <TimelineDot color="secondary" />
+                <TimelineConnector />
+              </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                Tathastu Dsa Scholar Intern
+                  Tathastu Dsa Scholar Intern
                 </Typography>
                 <Typography>TwO WaiTs</Typography>
               </TimelineContent>
             </TimelineItem>
-            
-            
           </Timeline>
         </div>
-      
       </div>
     </div>
   );

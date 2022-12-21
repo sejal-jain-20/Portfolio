@@ -8,7 +8,7 @@ import './../header.css';
 const Footer = () => {
   return (
     <div className="footersec-container">
-    <div className="social-icons">
+    <div className="social_icons_footer">
         <Social
             color="#0b83ee"
             icon={<CgMail />}

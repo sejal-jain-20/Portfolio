@@ -9,6 +9,7 @@ import Skills from './Component/Skills/Skills';
 import Theme from './Component/Theme';
 import TimelineConstructor from './Component/Timeline/Timeline';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 // import ScrollToTop from "react-scroll-to-top";
 
 

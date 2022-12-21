@@ -5,6 +5,7 @@ import mail from "../../assets/QHTnun.gif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./../header.css";
+import Section from '../Section/Section';
 
 
 
@@ -33,9 +34,9 @@ const Contact = () => {
     }
 
   return (
-    <>
-     <h2 className="title"  id='Contact'>Get in touch</h2>
-    <div className="contact_container Container" style={{display:"flex"}}>
+    <div className='Container'>
+     <Section title={"Contact Me"} subtitle={"Get in touch"}/>
+    <div className="contact_container " id='Contact' style={{display:"flex"}}>
        
         <div className="contact_img">
             <img src={mail} alt="" width={400} />
@@ -56,7 +57,7 @@ const Contact = () => {
   </StyledContactForm>
   </div>
   </div> 
-  </>
+  </div>
   )
 }
 
