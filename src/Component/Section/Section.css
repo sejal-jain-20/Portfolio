@@ -1,0 +1,64 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-udernline {
+  height: 45px;
+  position: relative;
+  width: 100px;
+}
+
+.about-circle {
+  background-color: var(--dark-orange);
+  border-radius: 50%;
+  left: 0;
+  margin: auto;
+  background-color: rgb(70, 11, 179);
+  position: absolute;
+  right: 0;
+  top: -8%;
+  width: 10px;
+  height: 10px;
+}
+
+.about-udernline:before {
+  background: #090909;
+  content: "";
+  border-radius: 0px 10px 10px 0px;
+  height: 2px;
+  margin: auto;
+  position: absolute;
+  top: 4%;
+  width: 66%;
+  right: -25px;
+}
+.about-udernline:after {
+  background: #090909;
+  content: "";
+  height: 2px;
+  margin: auto;
+  border-radius: 10px 0px 0px 10px;
+  position: absolute;
+  top: 4%;
+  left: -25px;
+  width: 66%;
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+  color:#090909;
+  font-weight: 800;
+  margin-bottom: -1px;
+}
+
+.sub-title {
+  text-align: center;
+  padding: 0.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
